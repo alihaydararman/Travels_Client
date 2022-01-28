@@ -39,7 +39,7 @@ const UpdateTravelsFrom = () => {
     const classes = useStyles();
 
     useEffect(() => {
-        fetch(`https://hidden-plains-90674.herokuapp.com/travel/${id}`)
+        fetch(`https://frozen-island-30470.herokuapp.com/travel/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id, setProduct])

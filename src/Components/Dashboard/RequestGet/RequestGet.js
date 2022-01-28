@@ -7,17 +7,17 @@ import { useState } from 'react';
 const RequestGet = () => {
     const [requestData, setRequestData] = useState([]) || ''
     useEffect(() => {
-        fetch('https://evening-woodland-47343.herokuapp.com/request')
+        fetch('https://frozen-island-30470.herokuapp.com/request')
             .then(res => res.json())
             .then(data => setRequestData(data))
     }, [setRequestData]);
 
     const deleteMassage = (id) => {
         window.confirm("Are you sure you wish to delete this item?") &&
-            axios.delete(`https://evening-woodland-47343.herokuapp.com/massageDelete/${id}`)
+            axios.delete(`https://frozen-island-30470.herokuapp.com/massageDelete/${id}`)
                 .then(res => {
                     res.data.deletedCount &&
-                        fetch('https://evening-woodland-47343.herokuapp.com/request')
+                        fetch('https://frozen-island-30470.herokuapp.com/request')
                             .then(res => res.json())
                             .then(data => setRequestData(data))
                 }
