@@ -33,7 +33,7 @@ const Register = () => {
     }
     return (
 
-        <Grid >
+        <Grid style={{ background: 'pink' }}>
             {
                 isLoading ? <LinearProgress /> :
                     <form onSubmit={handleLoginSubmit}>
