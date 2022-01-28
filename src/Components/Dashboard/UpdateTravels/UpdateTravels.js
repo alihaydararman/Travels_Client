@@ -17,7 +17,7 @@ const UpdateTravels = () => {
     const [open, setOpen] = React.useState(false);
 
     useEffect(() => {
-        fetch('https://hidden-plains-90674.herokuapp.com/travels')
+        fetch('https://frozen-island-30470.herokuapp.com/travels')
             .then(res => res.json())
             .then(data => setTravels(data) || '')
     }, [])
@@ -26,9 +26,9 @@ const UpdateTravels = () => {
 
     const handleTravelsDelete = (id) => {
         window.confirm("Are you sure you wish to delete this item?") &&
-            axios.delete(`https://hidden-plains-90674.herokuapp.com/travelDelete/${id}`)
+            axios.delete(`https://frozen-island-30470.herokuapp.com/travelDelete/${id}`)
                 .then(res => res.data.deletedCount &&
-                    fetch('https://hidden-plains-90674.herokuapp.com/travels')
+                    fetch('https://frozen-island-30470.herokuapp.com/travels')
                         .then(res => res.json())
                         .then(data => setTravels(data) || '')
                         .finally(() => {

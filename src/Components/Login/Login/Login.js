@@ -25,11 +25,11 @@ const Login = () => {
     }
     return (
 
-        <Grid Grid sx={{ mt: 12 }}>
+        <Grid Grid sx={{ mt: 6 }}>
             <form onSubmit={handleLoginSubmit}>
 
                 <TextField
-                    sx={{ width: 1 }}
+                    sx={{ width: 1, background: 'gray' }}
                     required
                     id="standard-password-email"
                     label="You Email"
@@ -42,7 +42,7 @@ const Login = () => {
 
                 ></TextField> <br />
                 <TextField
-                    sx={{ width: 1 }}
+                    sx={{ width: 1, background: 'gray' }}
                     required
                     id="standard-password-input"
                     label="Password"
@@ -53,7 +53,7 @@ const Login = () => {
                     onChange={login}
                     color="secondary"
                 />
-                <Button color="secondary" type="submit" sx={{ width: 1, mt: 5 }} className="feature-button" variant="contained">Login</Button>
+                <Button color="secondary" type="submit" sx={{ width: 1, mt: 5, background: 'gray' }} className="feature-button" variant="contained">Login</Button>
 
             </form>
 

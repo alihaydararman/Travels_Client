@@ -33,12 +33,12 @@ const Register = () => {
     }
     return (
 
-        <Grid style={{ background: 'pink' }}>
+        <Grid>
             {
                 isLoading ? <LinearProgress /> :
                     <form onSubmit={handleLoginSubmit}>
                         <TextField
-                            sx={{ width: 1 }}
+                            sx={{ width: 1, background: 'gray' }}
                             required
                             id="standard-name-input"
                             label="You Full Name"
@@ -50,7 +50,7 @@ const Register = () => {
                             color="secondary"
                         /> <br />
                         <TextField
-                            sx={{ width: 1 }}
+                            sx={{ width: 1, background: 'gray' }}
                             required
                             id="standard-email-input"
                             label="You Email"
@@ -62,7 +62,7 @@ const Register = () => {
                             color="secondary"
                         /> <br />
                         <TextField
-                            sx={{ width: 1 }}
+                            sx={{ width: 1, background: 'gray' }}
                             required
                             id="standard-password-input"
                             label="Password"
@@ -74,7 +74,7 @@ const Register = () => {
                             color="secondary"
                         />
                         <TextField
-                            sx={{ width: 1 }}
+                            sx={{ width: 1, background: 'gray' }}
                             required
                             id="standard-password-input"
                             label="Re-type Password"
@@ -85,7 +85,7 @@ const Register = () => {
                             onBlur={handleOnBlur}
                             color="secondary"
                         />
-                        <Button color="secondary" sx={{ width: 1, mt: 5 }} type="submit" className="feature-button" variant="contained">Register</Button>
+                        <Button color="secondary" sx={{ width: 1, mt: 5, background: 'gray' }} type="submit" className="feature-button" variant="contained">Register</Button>
                     </form>
             }
 

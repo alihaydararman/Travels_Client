@@ -37,7 +37,7 @@ const LoginToggle = () => {
                             <Typography defaultChecked sx={{ textAlign: 'center', my: 2, color: 'darkorange' }}>
                                 -----------------or------------------
                             </Typography>
-                            <Button sx={{ width: 1 }} onClick={() => signInWithGoogle(location, history)} variant="contained"><GoogleIcon />Google Sing In</Button>
+                            <Button sx={{ width: 1, background: 'gray' }} onClick={() => signInWithGoogle(location, history)} variant="contained"><GoogleIcon />Google Sing In</Button>
 
                             <Box sx={{ mt: 5 }}>
                                 {

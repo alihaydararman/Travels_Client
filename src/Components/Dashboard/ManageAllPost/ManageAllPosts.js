@@ -29,7 +29,7 @@ const ManageAllPosts = () => {
 
 
     const handleApprove = (id) => {
-        fetch(`https://hidden-plains-90674.herokuapp.com/approve/${id}`, {
+        fetch(`https://frozen-island-30470.herokuapp.com/travels/approve/${id}`, {
             method: "PUT",
             headers: {
 
@@ -42,7 +42,7 @@ const ManageAllPosts = () => {
 
                 if (data.modifiedCount) {
 
-                    fetch('https://hidden-plains-90674.herokuapp.com/travels')
+                    fetch('https://frozen-island-30470.herokuapp.com/travels/travels')
                         .then(res => res.json())
                         .then(data => setTravels(data))
                 }
@@ -51,9 +51,9 @@ const ManageAllPosts = () => {
 
     const handleTravelsDelete = (id) => {
         window.confirm("Are you sure you wish to delete this item?") &&
-            axios.delete(`https://hidden-plains-90674.herokuapp.com/travelDelete/${id}`)
+            axios.delete(`https://frozen-island-30470.herokuapp.com/travels/travelDelete/${id}`)
                 .then(res => res.data.deletedCount &&
-                    fetch('https://hidden-plains-90674.herokuapp.com/travels')
+                    fetch('https://frozen-island-30470.herokuapp.com/travels/travels')
                         .then(res => res.json())
                         .then(data => setTravels(data))
                         .finally(() => {
