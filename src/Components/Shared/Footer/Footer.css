@@ -1,0 +1,69 @@
+.main-container {
+    padding: 60px 0;
+    margin-top: 50px;
+    background-color: rgb(26, 18, 18);
+  }
+  
+  .main-container h5 {
+    color: rgb(207, 191, 168);
+  }
+  
+  .footer-container p {
+    font-size: 13px;
+  }
+  .footer-container span {
+    font-size: 13px;
+  }
+  
+  .name {
+    color: rgb(92, 23, 63);
+  }
+  
+  .footer-container h6 {
+    margin-top: 20px;
+    color: rgb(42, 153, 218);
+  }
+  
+  .footer-container {
+    list-style: none;
+  }
+  .footer-container li {
+    font-size: 18px;
+  }
+  .footer-container li a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color:#6c757d;
+  }
+  
+  .footer-container li a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }
+  
+  .footer-container ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer-container ul li i {
+    font-size: 30px;
+    margin-left: 5px;
+    color: rgb(191, 197, 199);
+    background-color: rgb(80, 56, 33);
+    padding: 5px;
+  }
+  
+  ul {
+    padding: 0;
+  }
+  
+  .fot {
+    background-color: #111111;
+    font-size: 14px;
+    color: rgb(104, 101, 96);
+    padding: 10px 0;
+  }
+ 
+  
